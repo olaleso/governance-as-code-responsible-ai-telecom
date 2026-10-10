@@ -1,0 +1,8 @@
+{
+  "protected_attribute": "gender",
+  "comparison_note": "Groups are used as a technical controlled comparison; no normative privileged/unprivileged designation is made.",
+  "clean_test_holdout": true,
+  "scenario_count": 6,
+  "model_count": 3,
+  "result_rows": 18
+}

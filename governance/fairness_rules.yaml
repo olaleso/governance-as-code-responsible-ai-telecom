@@ -1,0 +1,34 @@
+version: "0.1.0"
+status: "research-prototype"
+notes:
+  - "Thresholds are experimental research controls and are not asserted as universal legal thresholds."
+  - "Gender-group comparisons are used only as a controlled technical test case."
+  - "Selection-rate ratio is defined symmetrically as min(group rates) / max(group rates)."
+
+rules:
+  - id: FAIR-SR-001
+    domain: fairness
+    name: selection_rate_ratio
+    metric: selection_rate_ratio
+    operator: ">="
+    threshold: 0.80
+    severity: critical
+    failure_action: block
+
+  - id: FAIR-EO-001
+    domain: fairness
+    name: absolute_equal_opportunity_difference
+    metric: absolute_equal_opportunity_difference
+    operator: "<="
+    threshold: 0.10
+    severity: high
+    failure_action: review_or_block
+
+  - id: FAIR-FPR-001
+    domain: fairness
+    name: absolute_false_positive_rate_difference
+    metric: absolute_false_positive_rate_difference
+    operator: "<="
+    threshold: 0.10
+    severity: high
+    failure_action: review_or_block

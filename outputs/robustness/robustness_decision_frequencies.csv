@@ -1,0 +1,16 @@
+scenario,model,PASS_count,REVIEW_count,BLOCK_count,n
+B0_baseline,logistic_regression,30,0,0,30
+B0_baseline,random_forest,30,0,0,30
+B0_baseline,xgboost,30,0,0,30
+DQ1_missing_20pct,logistic_regression,0,30,0,30
+DQ1_missing_20pct,random_forest,0,30,0,30
+DQ1_missing_20pct,xgboost,0,30,0,30
+DQ2_invalid_contract_02pct,logistic_regression,0,0,30,30
+DQ2_invalid_contract_02pct,random_forest,0,0,30,30
+DQ2_invalid_contract_02pct,xgboost,0,0,30,30
+F1_label_flip_25pct_fairness,logistic_regression,0,0,30,30
+F1_label_flip_25pct_fairness,random_forest,0,0,30,30
+F1_label_flip_25pct_fairness,xgboost,1,0,29,30
+P1_minimum_7_features,logistic_regression,30,0,0,30
+P1_minimum_7_features,random_forest,30,0,0,30
+P1_minimum_7_features,xgboost,30,0,0,30

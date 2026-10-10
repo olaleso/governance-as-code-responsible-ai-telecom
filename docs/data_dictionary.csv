@@ -1,0 +1,22 @@
+variable,group,type,description,governance_note
+customerID,identifier,string,Unique customer identifier,Direct identifier / exclude from model features
+gender,demographic,categorical,Customer gender,Potential protected/sensitive attribute for fairness analysis
+SeniorCitizen,demographic,binary,Whether customer is a senior citizen,Potential protected attribute/proxy
+Partner,demographic,categorical,Whether customer has a partner,Demographic/personal attribute
+Dependents,demographic,categorical,Whether customer has dependents,Demographic/personal attribute
+tenure,account,integer,Months with company,Predictive feature
+PhoneService,service,categorical,Phone service subscribed,Predictive feature
+MultipleLines,service,categorical,Multiple line service status,Predictive feature
+InternetService,service,categorical,Internet service type,Predictive feature
+OnlineSecurity,service,categorical,Online security service status,Predictive feature
+OnlineBackup,service,categorical,Online backup service status,Predictive feature
+DeviceProtection,service,categorical,Device protection service status,Predictive feature
+TechSupport,service,categorical,Technical support service status,Predictive feature
+StreamingTV,service,categorical,Streaming TV service status,Predictive feature
+StreamingMovies,service,categorical,Streaming movies service status,Predictive feature
+Contract,account,categorical,Contract type,Predictive feature
+PaperlessBilling,account,categorical,Paperless billing status,Predictive feature
+PaymentMethod,account,categorical,Payment method,Potential behavioural/proxy attribute
+MonthlyCharges,billing,numeric,Monthly charge,Predictive feature
+TotalCharges,billing,numeric,Total charges,Contains blank/whitespace values in source sample
+Churn,target,binary,Whether customer left,Prediction target

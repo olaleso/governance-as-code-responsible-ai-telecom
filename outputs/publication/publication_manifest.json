@@ -1,0 +1,21 @@
+{
+  "tables": [
+    "Table1_Baseline_Model_Performance.csv",
+    "Table2_Data_Quality_Governance_Impact.csv",
+    "Table3_Fairness_Experiment_Results.csv",
+    "Table4_Privacy_Minimisation_Results.csv",
+    "Table5_Explainability_Comparison.csv"
+  ],
+  "figures": [
+    "Figure1_Baseline_ROCAUC.png",
+    "Figure2_DQ_Governance_vs_ROCAUC.png",
+    "Figure3_Fairness_Selection_Rate_Ratio.png",
+    "Figure4_Privacy_Utility_Tradeoff.png",
+    "Figure5_Sensitive_Feature_Explanation_Share.png"
+  ],
+  "text": [
+    "Limitations_and_Scope.md",
+    "Methods_Draft.md",
+    "Results_Draft.md"
+  ]
+}

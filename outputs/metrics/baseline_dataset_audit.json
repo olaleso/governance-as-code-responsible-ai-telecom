@@ -1,0 +1,11 @@
+{
+  "rows": 7043,
+  "columns": 21,
+  "duplicate_customer_ids": 0,
+  "duplicate_customer_id_rate": 0.0,
+  "missing_cells": 11,
+  "missing_rate_overall": 7.43730688356558e-05,
+  "missing_TotalCharges": 11,
+  "invalid_negative_tenure": 0,
+  "target_churn_rate": 0.2653698707936959
+}

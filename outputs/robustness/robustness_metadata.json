@@ -1,0 +1,21 @@
+{
+  "n_seeds": 30,
+  "seed_start": 20261008,
+  "seed_end": 20261037,
+  "paired_design": true,
+  "test_split_changes_by_seed": true,
+  "within_seed_same_test_holdout_across_scenarios": true,
+  "scenarios": [
+    "B0_baseline",
+    "DQ1_missing_20pct",
+    "DQ2_invalid_contract_02pct",
+    "F1_label_flip_25pct",
+    "P1_minimum_7_features"
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "xgboost"
+  ],
+  "confidence_interval": "95% Student-t interval across seeds"
+}

@@ -1,0 +1,10 @@
+version: "0.2.0"
+status: "research-prototype"
+notes:
+  - "Thresholds are experimental governance controls, not legal thresholds."
+rules:
+  - {id: DQ-COMP-001, domain: data_quality, name: model_feature_missingness, metric: model_feature_missing_rate, operator: "<=", threshold: 0.02, severity: high, failure_action: review_or_block}
+  - {id: DQ-UNIQ-001, domain: data_quality, name: duplicate_customer_identifier, metric: duplicate_customer_id_rate, operator: "==", threshold: 0.0, severity: high, failure_action: block}
+  - {id: DQ-VALID-001, domain: data_quality, name: tenure_nonnegative, metric: invalid_tenure_rate, operator: "==", threshold: 0.0, severity: high, failure_action: block}
+  - {id: DQ-CAT-001, domain: data_quality, name: categorical_domain_validity, metric: invalid_category_rate, operator: "==", threshold: 0.0, severity: high, failure_action: block}
+  - {id: DQ-NUM-001, domain: data_quality, name: numeric_domain_validity, metric: invalid_numeric_rate, operator: "==", threshold: 0.0, severity: high, failure_action: block}

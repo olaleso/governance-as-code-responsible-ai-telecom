@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Public dataset is downloaded reproducibly rather than redistributed.
+data/raw/*.csv
+data/processed/*.csv
+
+# Regenerable binary/log artefacts.
+outputs/models/*
+!outputs/models/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+
+# Local/editor artefacts
+.vscode/
+.idea/
+*.tmp
+~$*.docx

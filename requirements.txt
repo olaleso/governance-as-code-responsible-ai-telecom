@@ -1,0 +1,10 @@
+pandas>=2.3,<3
+numpy>=2.5,<3
+scikit-learn>=1.9,<2
+xgboost>=3.4,<4
+joblib>=1.6,<2
+PyYAML>=6.0,<7
+requests>=2.34,<3
+scipy>=1.18,<2
+shap>=0.52,<1
+matplotlib>=3.11,<4

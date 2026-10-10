@@ -1,0 +1,22 @@
+version: "0.1.0"
+status: "research-prototype"
+notes:
+  - "Thresholds are experimental research controls, not legal thresholds."
+  - "The experiment evaluates predictive utility versus feature exposure."
+rules:
+  - id: PRIV-ID-001
+    domain: privacy
+    name: direct_identifier_in_model_features
+    metric: direct_identifier_count
+    operator: "=="
+    threshold: 0
+    severity: critical
+    failure_action: block
+  - id: PRIV-SENS-001
+    domain: privacy
+    name: sensitive_attribute_count
+    metric: sensitive_attribute_count
+    operator: "<="
+    threshold: 0
+    severity: high
+    failure_action: review_or_block
